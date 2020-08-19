@@ -1,7 +1,7 @@
 TARGET = myGame
 VPATH = source
 OBJS = main.o
-CPPFLAGS = -std=c++2a
+CPPFLAGS = -std=c++17
 
 all: ${TARGET}
 
