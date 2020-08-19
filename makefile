@@ -1,7 +1,7 @@
 TARGET = myGame
 VPATH = source
 OBJS = main.o
-CPPFLAGS = -std=c++17
+CPPFLAGS = -std=c++2a
 
 all: ${TARGET}
 
@@ -10,7 +10,7 @@ ${TARGET}: ${OBJS}
 
 main.o:
 
-.PHONY: do clean reset
+.PHONY: do clean reset git
 
 do: 
 	@./${TARGET}
@@ -21,3 +21,6 @@ clean:
 reset:
 	@echo "おはやし 1 50 50 5 3 0 1 0\n\
 	-1" > data/player.dat
+
+git:
+	@echo https://github.com/oha-yashi/myRPG.git
