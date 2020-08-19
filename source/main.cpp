@@ -116,7 +116,7 @@ public:
       printf("1: attack 2: defence -> ");
       while(std::cin>>c){
         try{stoi(c);break;}
-        catch(std::exception &e){printf("input number 1 or 2");}
+        catch(...){printf("input number 1 or 2");}
       }
     } while (c!="1"&&c!="2");
     switch(stoi(c)){
@@ -232,7 +232,7 @@ int main(){
       try {
         selected_monster = stoi(slct);
         break;
-      } catch(const exception& e) {
+      } catch(...) {
         printf("input number 1-3 or 0\n");
       }
     }
